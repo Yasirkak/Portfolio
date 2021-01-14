@@ -102,7 +102,7 @@ function fadeOut4(){
 
 //nav-bar scrolls down to specific parts with the nav-bar
 
-function scrollTop(){
+function scrollToTop(){
 	var element = document.getElementById("top");
 	element.scrollIntoView({behavior: 'smooth', block: 'start'});
 }
