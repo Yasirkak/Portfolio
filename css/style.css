@@ -1,0 +1,779 @@
+body{
+
+	font-family: 'Bodoni Moda', serif;
+
+	
+}
+html, body{
+	margin:0;
+	padding:0;
+	width:100%;
+	overflow: auto;
+}
+
+.divider{
+	background-color: #B22222;
+	width: 100%;
+	height: 40px;
+	margin:0px;
+}
+
+/*Nav bar*/
+
+#mainNav{
+	position: fixed;
+	height: 50px;
+	top: 0px;
+	width: 100%;
+	background-color: #B22222;
+	z-index: 1;
+	border-radius: 2px;
+}
+
+#ulNav{
+	text-align: center;
+	
+}
+
+#ulNav a{
+	color: white;
+	text-decoration:none;
+	font-weight: bold;
+	cursor: pointer;
+
+}
+
+.hvr-radial-in {
+	padding: 5px;
+	margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border-radius: 2px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 1.3s;
+}
+.hvr-radial-in:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #B22222;
+  border-radius: 100%;
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-in:hover, .hvr-radial-in:focus, .hvr-radial-in:active {
+  color: white;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.hvr-radial-in:hover:before, .hvr-radial-in:focus:before, .hvr-radial-in:active:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+/*top*/
+
+header{
+	background-image: url(../img/bg.png);
+
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	color: black;
+	margin-top: 50px;
+	margin-right:0;
+}
+
+.resize{
+	object-fit: contain;
+	width: 500px;
+	height: 420px;
+	margin-top: 20px;
+	float: right;
+}
+.imageHolder{
+	width: 50%;
+	display: inline-block;
+	float: right;
+
+}
+
+.headerLeft{
+	display: inline-block;
+	width: 40%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+
+/*My work*/
+
+#myWorkSection{
+
+	background-image: url(../img/bg.up.png);
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	color: black;
+	margin-top: 50px;
+	margin-top: 0px;
+	object-fit: contain;
+}
+
+section p{
+	font-size: 20px;
+}
+section h1{
+	margin-top: 0px;
+}
+
+.resizeSec{
+	object-fit: contain;
+	width: 600px;
+	height: 400px;
+	float: right;
+	float: top;
+	margin-right: 5px;
+}
+
+.imgContainer{
+	margin-top: 5%;
+	margin-left: 12%;
+	margin-right: 12%;
+}
+
+.container{
+	display: inline-block;
+	margin-left: 50px;
+
+	height: 300px;
+	width: 250px;
+	position: relative;
+}
+
+.container img{
+	width: 250px;
+	height: 250px;
+	size: cover;
+ 	display: inline-block;
+  	vertical-align: middle;
+  	-webkit-transform: perspective(1px) translateZ(0);
+  	transform: perspective(1px) translateZ(0);
+  	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  	-webkit-transition-duration: 0.3s;
+  	transition-duration: 0.3s;
+  	-webkit-transition-property: transform;
+  	transition-property: transform;
+
+	border: #B22222 solid 2px;
+	border-radius: 4px;
+	cursor: pointer;
+
+
+}
+
+.container p{
+	text-align: center;
+	visibility: hidden;
+}
+
+
+.container img:hover{
+   	-webkit-transform: translateY(-20px);
+  	transform: translateY(-20px);
+
+}
+
+
+.hiddenText{
+	visibility: hidden;
+}
+
+
+#sbSection{
+	width:70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 10px;
+	border: solid #4c0000 2px;
+	border-radius: 4px;
+	display: none;
+
+}
+
+
+
+#pixerSection{
+	width:70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 10px;
+	border: solid #4c0000 2px;
+	border-radius: 4px;
+	display: none;
+}
+
+#boinderSection{
+	width:70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 10px;
+	border: solid #4c0000 2px;
+	border-radius: 4px;
+	display: none;	
+}
+
+
+.description{
+	width: 50%;
+	float: left;
+}
+
+.myPart{
+	width: 50%;
+	float: right;
+}
+
+.myPart li{
+	list-style: square; 
+}
+
+
+/*about me*/
+
+
+#aboutMeSection{
+
+	background-image: url(../img/bg.up.png);
+
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	color: black;
+	margin-top: 50px;
+	margin-top: 0px;
+	object-fit: contain;
+}
+
+
+.headerLeft2{
+	display: inline-block;
+	width: 40%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+
+.headerRight{
+	display: inline-block;
+	width: 45%;
+	margin-left: 10%;
+	margin-right: 5px;
+}
+
+.headerRight li{
+	margin: 10px;
+	font-size: 20px;
+	list-style: square;
+
+}
+
+
+/*contact me*/
+
+#contactMeSection{
+	background-image: url(../img/bg.up.png);
+
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	color: black;
+	margin-top: 50px;
+	margin-top: 0px;
+}
+
+#contactDiv{
+	width: 500px;
+	height: 300px;
+	margin-left: 30%;
+	margin-right: 30%;
+	border-radius: 4px;
+	background-color: #B22222;
+}
+
+#input1{
+	width: 94%;
+	background-color: #4c0000;
+	border-radius: 4px;
+	border: none;
+	color: white;
+	padding: 10px;
+	margin:5px;
+
+}
+
+#input2{
+	width: 94%;
+	background-color: #4c0000;
+	border-radius: 4px;
+	border: none;
+	color: white;
+	padding: 10px;
+	margin: 5px;
+	height: 150px;
+	resize: none;
+
+}
+
+#inputBtn{
+	display: block;
+    width: 98%;
+    margin: 5px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 5px 10px;
+    border: none;
+    color: #980000;
+    font-weight: 700;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+#linkDiv{
+	margin-top: 10px;
+	border: solid #980000 2px;
+	border-radius: 5px;
+	width: 150px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-left: 40%;
+	margin-right: 40%;
+	cursor: pointer;
+	text-align: center;
+
+}
+
+#linkedin{
+	display: inline-block;
+}
+
+#icon{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+}
+
+
+
+
+
+
+/*media*/
+
+@media (max-width: 1200px){
+	.container{
+		display: block;
+	}
+
+	#myWorkSection{
+		height: 950px;
+		position: relative;
+	}
+
+	#sbSection{
+		position: absolute;
+		top:100px;
+		right: -100px;
+		width: 40%;
+	}
+
+	#pixerSection{
+		position: absolute;
+		top:100px;
+		right: -100px;
+		width: 40%;
+	}
+
+	#boinderSection{
+		position: absolute;
+		top:100px;
+		right: -100px;
+		width: 40%;
+	}
+
+	.description{
+		width: 100%;
+		float: none;
+	}
+
+	.myPart{
+		width: 100%;
+		float: none;
+	}
+}
+
+@media (max-width: 940px){
+	html, body{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	overflow: auto;
+	}
+
+	header{
+	height: 600px;
+	overflow: auto;
+	overflow: hidden;
+	}
+
+	.imageHolder{
+		display: block;
+		width: 98%;
+		text-align: center;
+		margin:0;
+	}
+	.resize{
+		float: none;
+	}
+	
+	.headerLeft{
+		width: 100%;
+		text-align: center;
+	}
+
+	.headerLeft2{
+		width: 80%;
+		margin-bottom: 20px;
+	}
+
+
+	.headerRight{
+		margin:0px;
+	}
+
+	#aboutMeSection{
+		text-align: center;
+	}
+
+
+	#contactDiv{
+		width: 300px;
+	}
+
+	#contactMe{
+		text-align: center;
+	}
+
+	#contactMePara{
+		text-align: center;
+		margin-right:10%;
+		margin-left: 10%;
+	}
+
+	#input1{
+		width: 270px;
+	}
+
+	#input2{
+		width: 270px;
+	}
+
+	#inputBtn{
+		width: 290px;
+	}
+
+
+}
+
+@media (max-width: 720px){
+	body{
+		width: 100%;
+	}
+	#aboutMeSection{
+		height: fit-content;
+	}
+
+	.headerRight li{
+		margin-bottom: 20px;
+	}
+
+	.imgContainer{
+		margin:auto;
+		width: 250px;
+	}
+
+	.container{
+		display: block;
+		margin:0;
+	}
+
+	#myWorkSection{
+		height: fit-content;
+		position: relative;
+		object-fit: contain;
+		
+	}
+
+	#pixerContainer{
+		display: block;
+		margin-top: 10%;
+		
+
+	}
+	#boinderContainer{
+		display: block;
+		margin-top: 10%;
+
+	}
+
+	#sbSection{
+
+
+		position: initial;
+    	width: 80%;
+    	margin-left: 7%;
+    	margin-right: 7%;
+    	margin-top:40px;
+    	
+	}
+
+	#pixerSection{
+		position: initial;
+    	width: 80%;
+    	margin-left: 7%;
+    	margin-right: 7%;
+    	margin-top:40px;
+	}
+
+	#boinderSection{
+		position: initial;
+    	width: 80%;
+    	margin-left: 7%;
+    	margin-right: 7%;
+    	margin-top:40px;
+	}
+
+	.description{
+		width: 100%;
+		float: none;
+	}
+
+	.myPart{
+		width: 100%;
+		float: none;
+	}
+
+
+
+}
+
+@media (max-width: 500px){
+	.resize{
+		width: 350px;
+		height: 300px;
+	}
+
+	header{
+		height: 500px;
+	}
+
+	#aboutMeSection{
+		height: fit-content;
+	}
+
+	.headerRight{
+		width: 100%;
+	}
+
+	#contactMeSection{
+		height: 550px;
+	}
+
+	
+	#contactDiv{
+		width: 200px;
+	}
+
+	#input1{
+		width: 170px;
+	}
+
+	#input2{
+		width: 170px;
+	}
+
+	#inputBtn{
+		width: 190px;
+	}
+
+	#linkDiv{
+		margin-left: 35%;
+
+		margin-right: 35%;
+	}
+
+
+}
+
+
+
+@media (min-width: 1200px){
+	#myWorkSection{
+
+	background-image: url(../img/bg.up.png);
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	color: black;
+	margin-top: 50px;
+	margin-top: 0px;
+	object-fit: contain;
+}
+
+section p{
+	font-size: 20px;
+}
+section h1{
+	margin-top: 0px;
+}
+
+.resizeSec{
+	object-fit: contain;
+	width: 600px;
+	height: 400px;
+	float: right;
+	float: top;
+	margin-right: 5px;
+}
+
+.imgContainer{
+	margin-top: 5%;
+	margin-left: 12%;
+	margin-right: 12%;
+}
+
+.container{
+	display: inline-block;
+	margin-left: 50px;
+
+	height: 300px;
+	width: 250px;
+	position: relative;
+
+}
+
+.container img{
+	width: 250px;
+	height: 250px;
+	size: cover;
+ 	display: inline-block;
+  	vertical-align: middle;
+  	-webkit-transform: perspective(1px) translateZ(0);
+  	transform: perspective(1px) translateZ(0);
+  	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  	-webkit-transition-duration: 0.3s;
+  	transition-duration: 0.3s;
+  	-webkit-transition-property: transform;
+  	transition-property: transform;
+
+	border: #B22222 solid 2px;
+	border-radius: 4px;
+	cursor: pointer;
+
+
+}
+
+.container p{
+	text-align: center;
+	visibility: hidden;
+}
+
+
+.container img:hover{
+   	-webkit-transform: translateY(-20px);
+  	transform: translateY(-20px);
+
+}
+
+
+.hiddenText{
+	visibility: hidden;
+}
+
+
+
+/* schoolbook*/
+
+#sbSection{
+	width:70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 10px;
+	border: solid #4c0000 2px;
+	border-radius: 4px;
+	display: none;
+
+}
+
+
+
+#pixerSection{
+	width:70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 10px;
+	border: solid #4c0000 2px;
+	border-radius: 4px;
+	display: none;
+}
+
+#boinderSection{
+	width:70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 10px;
+	border: solid #4c0000 2px;
+	border-radius: 4px;
+	display: none;	
+}
+
+
+.description{
+	width: 50%;
+	float: left;
+}
+
+.myPart{
+	width: 50%;
+	float: right;
+}
+
+.myPart li{
+	list-style: square; 
+}
+
+}
